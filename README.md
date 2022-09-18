@@ -4,4 +4,4 @@ A dictionary web application made with Bootstrap and plain JavaScript.
 
 https://duaneywadey.github.io/Dictionary-Web-App/
 
-![image](https://user-images.githubusercontent.com/88537860/171398073-2d309107-b5aa-4873-a660-8009da0f66c1.png)
+![image](https://user-images.githubusercontent.com/88537860/190915451-54f33a01-fa94-47eb-b030-c275dbd6af88.png)

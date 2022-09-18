@@ -9,28 +9,48 @@
 	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	<style>
+		div .dictinfo{
+			font-size: 1.2em;
+		}
+	</style>
 </head>
 <body>
 	
 	<h1 class="display-3" style="text-align: center;">Dictionary</h1>
 	
 	<div class="container">
-			<div class="row">	
-				<div class="col-sm-12">			
-				<div class="searchdiv">
-					<input type="text" style="font-size: 1.2em;" class="search-bar" id="inp-word">
+		<div class="row">	
+			<div class="col-md-12">
+				<div class="d-flex justify-content-center mt-4">			
+					<div class="searchdiv">
+						<input type="text" style="font-size: 1.2em;" class="form-control" id="inp-word" placeholder="Enter a word">
+					</div>
 				</div>
+			</div>
+		</div>
 
+		<div class="row">
+			<div class="col-md-12">
 				<div class="d-flex justify-content-center mt-4">
 					<button id="searchButton" type="button" class="btn btn-primary">Search</button>
 					<button id="clearButton" onclick="clear();" type="button" class="btn btn-info" style="margin-left: 4px;">Clear</button>
 				</div>
 			</div>
-			</div>	  				  				
+		</div>
+
+		<div class="row">
+			<div class="col-md-12 mt-4 d-flex justify-content-center">
+				<div class="card" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 10px 0 rgba(0, 0, 0, 0.04);">
+					<div class="card-body">
+					  	<div class="dictinfo" id="dictinfo"></div>	  		
+					</div>
+				</div>
+			</div>
+		</div>
+
 	</div>
-	  	<div class="w-50 ml-0 mr-0 mt-4 mx-auto text-center" style="max-width: 400px;">
-	  		<div class="dictinfo" id="dictinfo"></div>	  		
-	  	</div>
+	
 		
 </body>
 

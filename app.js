@@ -12,13 +12,13 @@ btn.addEventListener("click", () => {
 	.then((data) => {
 		console.log(data);
 		dictinfo.innerHTML = `
-				<div class="word" style="font-size:1.3em;">
+				<div class="word" style="font-size:2em;">
 				<p>${inpWord}</p>
 				</div>  
-				<div class="definition"style=font-size:0.7em;">
+				<div class="definition"style=font-size:1.5em;">
 				 <p>${data[0].meanings[0].definitions[0].definition}</p>
 				 </div>
-				<div class="example"  style="color:gray;font-size:0.6em;">
+				<div class="example"  style="color:gray;font-size:1em;">
 				<td>Example: </td><i> ${data[0].meanings[0].definitions[0].example || ""}</i>
 				</div>
 		`

@@ -15,11 +15,8 @@ btn.addEventListener("click", () => {
 				<div class="word" style="font-size:2em;">
 				<p>${inpWord}</p>
 				</div>
-				<div class="definition"style=font-size:1em;">
-				 <p><i>${data[0].meanings[0].partOfSpeech}</i></p>
-				</div>  
 				<div class="definition"style=font-size:1.5em;">
-				 <p>${data[0].meanings[0].definitions[0].definition}</p>
+				 <p><i>${data[0].meanings[0].partOfSpeech}</i>. ${data[0].meanings[0].definitions[0].definition}</p>
 				 </div>
 				<div class="example"  style="color:gray;font-size:1em;">
 				<td>Example: </td><i> ${data[0].meanings[0].definitions[0].example || ""}</i>
